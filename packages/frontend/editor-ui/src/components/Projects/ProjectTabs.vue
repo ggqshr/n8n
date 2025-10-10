@@ -11,6 +11,7 @@ import { usePostHog } from '@/stores/posthog.store';
 import { useProjectsStore } from '@/stores/projects.store';
 
 import { N8nTabs } from '@n8n/design-system';
+import { ProjectTypes } from '@/types/projects.types';
 type Props = {
 	showSettings?: boolean;
 	showExecutions?: boolean;
@@ -47,7 +48,7 @@ const projectId = computed(() => {
 		: route?.params?.projectId;
 });
 
-const isTeamProject = computed(() => projectStore.currentProject?.type === 'team');
+const isTeamProject = computed(() => projectStore.currentProject?.type === ProjectTypes.Team);
 
 const getRouteConfigs = () => {
 	// For project pages
