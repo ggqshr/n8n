@@ -3,4 +3,3 @@ numpy
 python-docx
 Jinja2
 pillow
-opencv-python
