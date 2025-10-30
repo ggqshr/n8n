@@ -3,3 +3,4 @@ numpy
 python-docx
 Jinja2
 pillow
+markitdown[all]
